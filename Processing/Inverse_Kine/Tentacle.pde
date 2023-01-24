@@ -1,6 +1,6 @@
 class Tentacle {
 PVector base;
-Segment[] segments = new Segment[5];
+Segment[] segments = new Segment[20];
 float len = 20;
 
   Tentacle(float x, float y) {
