@@ -13,7 +13,7 @@ float radius = 100;
 void setup() {
   size(1200, 800);
   FR = new Body(200, 200, 100);
-  t = new Tentacle(120,300);
+  t = new Tentacle(frogx,frogy);
   
   tl = new PVector(frogx,frogy);
   
@@ -34,7 +34,6 @@ void draw() {
   t.show();
   FR.update();
   FR.show();
-  t.setBase(FR.leg);
 
 }
 

@@ -17,12 +17,28 @@ PVector leg;
     if (key == 'd' || key == 'D') {
       
       frogx += 10;
+      
     }
- }
- if (keyPressed) {
+ 
+ 
     if (key == 'a' || key == 'A') {
+      
       frogx -= 10;
+    
+
     }
+    if (key == 's' || key == 'S') {
+      
+      frogy += 10;
+
+    }
+    if (key == 'w' || key == 'W') {
+      
+      frogy -= 10;
+
+    }
+          leg.set(frogx, frogy);
+
  }
  }
  void show(){

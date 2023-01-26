@@ -27,6 +27,7 @@ float len = 20;
   for ( int i = 1; i < total; i++) {
     segments[i].setA(segments[i-1].b);
   } 
+  if (
 }
 
    void setBase(PVector newBase){
