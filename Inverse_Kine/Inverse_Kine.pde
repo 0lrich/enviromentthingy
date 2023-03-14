@@ -1,23 +1,25 @@
 Body FR;
-Tentacle t;
+Terrain apple;
 
-
+Terrain rock;
+Terrain rock2;
 PVector tl;
 float tr;
 float speed;
-float frogx = 200;
-float frogy = 200;
-float radius = 100;
-//PVector bl = (340, 300);
-//PVector br = (120, 300);
+static int tentacleID;
+
 void setup() {
+    tentacleID=0;
   size(1200, 800);
-  FR = new Body(200, 200, 100);
-  t = new Tentacle(frogx,frogy);
+
+
+  apple = new object(0, 0, 20, 20);
+  System.out.println(apple.placement.x);
   
-  tl = new PVector(frogx,frogy);
-  
+  rock = new Terrain(500,300, 150, 50);
+  rock2 = new Terrain(0, 500, 700, 50);
   speed = 1;
+    FR = new Body(200, 200, 50);
   //TESTING
   
  
@@ -29,12 +31,14 @@ void setup() {
 void draw() {
   background(51);
   
-  t.update();
-  t.setBase(FR.leg);
-  t.show();
+  
   FR.update();
   FR.show();
-
+  apple.show();
+  rock.update();
+  rock.show();
+  rock2.update();
+  rock2.show();
 }
 
 //TOP LEFT == (0,0)
